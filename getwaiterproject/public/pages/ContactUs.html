@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>צור קשר</title>
+    <link rel="stylesheet" type="text/css" href="ContactUs.css" />
+    <meta charset="utf-8">
+    <!-- used to tell the browser to spread the page entirely, scale the screen to 1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+    <header>
+        <div class="div1">
+
+        </div>
+        <div class="div2">
+            <div class="div3">
+                <a href="/registration">הרשמה</a>
+                \
+                <a href="">כניסה למערכת</a>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="links ">
+        <a class="link" href="DAF HABAIT.HTML">דף הבית</a>
+        &nbsp;
+        &nbsp;
+        |
+        &nbsp;
+        &nbsp;
+        <a class="link" href="">אודות</a>
+        &nbsp;
+        &nbsp;
+        |
+        &nbsp;
+        &nbsp;
+        <a class="link" href="">איך זה עובד</a>
+        &nbsp;
+        &nbsp;
+        |
+        &nbsp;
+        &nbsp;
+        <a class="link" href="">צור קשר</a>
+
+    </div>
+    <img class="logo" src="LOGO.jpg">
+    <table class="margin TextRight">
+        <form action="FormSubmit.html" id="myForm">
+            <table class="TextRight margin">
+
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="lastName">:הודעה</label><br>
+                                <textarea name="Post" rows="9" cols="60" id="Post"></textarea>
+                            </td>
+                        <tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+
+                        <td><input type="submit" class="myButton FloatToLeft" value="שלח"></td>
+
+
+                        </tr>
+                    </table>
+
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td>
+                    <table class="TextRight margin">
+
+                        <tr>
+                            <td>
+                                <h3 class="fontSize colorRed">:צור קשר</h3>
+                            </td>
+                        </tr>
+                        <td>
+                            <label for="lastName">:שם פרטי</label><br>
+                            <input type="text" name="lastName" id="lastName" style="width:290px" required>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="lastName"> :שם משפחה</label><br>
+                                <input type="text" name="lastName" id="lastName" style="width:290px" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <label for="userName">:(כתובת מייל(שם משתמש</label><br>
+                                <input type="text" name="userName" id="userName" style="width:290px" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone"> :טלפון נייד</label><br>
+                                <input type="text" name="phone" id="phone" style="width:290px" required>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                </td>
+
+            </table>
+        </form>
+        <script>
+            let museOver = document.getElementsByTagName("input")
+
+            for (let input of museOver) {
+                input.addEventListener("mouseover", changeToRed);
+                input.addEventListener('mouseout', changeToWhrit);
+
+            }
+
+            function changeToRed() {
+                this.style.backgroundColor = 'red'
+            }
+
+            function changeToWhrit() {
+                this.style.backgroundColor = "#FFFFFF"
+            }
+        </script>
+</body>
+
+</html>

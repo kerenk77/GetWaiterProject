@@ -1,0 +1,142 @@
+.div1 {
+    background-color: rgb(94, 86, 86);
+    width: 100%;
+    height: 60px;
+
+}
+
+.div2 {
+    background-color: rgb(223, 16, 16);
+    height: 30px;
+    width: 100%;
+
+    top: 40px;
+
+}
+
+.div3 {
+    text-align: right;
+    padding-right: 190px;
+}
+
+.div4 {
+    background-color: rgb(134, 129, 129);
+    width: 100%;
+    height: 120px;
+
+}
+
+header {
+    color: white;
+}
+
+
+header div a {
+    color: white;
+
+
+}
+
+div a {
+    color: black;
+}
+
+
+
+a:link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.link:hover {
+    color: red;
+}
+
+a.link:active {
+    color: red;
+}
+
+
+.links {
+    position: absolute;
+    padding-top: 72px;
+    right: 200px;
+    z-index: 1;
+
+    margin-bottom: 1px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 100%;
+
+}
+
+
+.logo {
+    float: left;
+    height: 100px;
+
+    padding-left: 80px;
+    padding-top: 1px;
+    margin: 2px
+}
+
+.FloatToRight {
+    float: right;
+}
+
+.TextRight {
+    text-align: right
+}
+
+
+.textAlign {
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+
+.fontSize {
+    font-size: 20px;
+
+}
+
+.margin {
+    margin-left: 620px;
+    margin-bottom: 150px;
+    margin-top: 30px;
+}
+
+
+.myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437', GradientType=0);
+    background-color: #c62d1f;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+.colorRed {
+    color: rgb(207, 16, 16);
+}
