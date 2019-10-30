@@ -11,7 +11,7 @@ app.use(express.urlencoded());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-app.get('/', (req, res) => res.sendFile('./pages/home.html', {
+app.get('/', (req, res) => res.sendFile('./public/pages/home.html', {
     root: __dirname
 }));
 app.get('/registration', (req, res) => res.sendFile('./public/pages/Registration.html', {

@@ -1,2 +1,0 @@
-# GetWaiterProject
-get waiter site
