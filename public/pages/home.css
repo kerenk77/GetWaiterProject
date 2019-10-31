@@ -88,6 +88,13 @@ a.link:active {
     height: 450px;
 }
 
+.img2 {
+    padding-top: 20px;
+    width: 100%;
+    height: 352px;
+}
+
+
 details {
     text-align: center;
 
