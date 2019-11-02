@@ -3,6 +3,8 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const port = process.env.PORT || 80;
 const registration = require("./registration.js");
+const dbModule = require("./dataBase.js");
+
 
 app.use(express.static('public'));
 app.use(cookieParser());
@@ -23,6 +25,10 @@ app.get('/contactus', (req, res) => res.sendFile('./public/pages/ContactUs.html'
 app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
     root: __dirname
 }));
+
+app.get('/db', (req, res) => {
+    dbModule(req, res);
+});
 
 app.post('/registration/register', (req, res) => {
     console.log('sghsth');
