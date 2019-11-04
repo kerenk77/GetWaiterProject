@@ -1,9 +1,21 @@
+require('dotenv').config();
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = process.env.PORT || 80;
-const registration = require("./registration.js");
+// const registration = require("./registration.js");
 const dbModule = require("./dataBase.js");
+
+app.set('view engine', 'ejs');
+app.get('/userinfo/:id', (req, res) => {
+
+    res.render('pages/userinfo', {
+        id: req.params.id
+    });
+
+});
+
+
 
 
 app.use(express.static('public'));

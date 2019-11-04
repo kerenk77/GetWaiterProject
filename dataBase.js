@@ -4,10 +4,10 @@ let db;
 
 mysql.createPool({
     connectionLimit: 100,
-    host: "localhost",
-    user: "root",
-    password: "beitar",
-    database: "get_waiter"
+    host: process.env.MYSQL_URL,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DB
 }).then((c) => {
     db = c;
 }).catch((e) => {
