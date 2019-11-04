@@ -3,8 +3,8 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = process.env.PORT || 80;
-// const registration = require("./registration.js");
-const dbModule = require("./dataBase.js");
+const registration = require("./public/registration.js");
+//const dbModule = require("./dataBase.js");
 
 app.set('view engine', 'ejs');
 app.get('/userinfo/:id', (req, res) => {
@@ -39,15 +39,15 @@ app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
 }));
 
 app.get('/db', (req, res) => {
-    dbModule(req, res);
+    registration(req, res);
 });
 
 app.post('/registration/register', (req, res) => {
-    console.log('sghsth');
-    return registration.register(req, res);
+    console.log(req.body)
+    registration.register(req, res);
 });
 app.post('/registration/login', (req, res) => {
-    return registration.login(req, res);
+    registration.login(req, res);
 });
 
 app.listen(port, () => console.log('Example app listening on port ' + port));

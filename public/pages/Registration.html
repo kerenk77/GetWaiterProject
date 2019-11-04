@@ -245,7 +245,8 @@
                         firstName: $('#firstName').val(),
                         lastName: $('#lastName').val(),
                         userName: $('#userName').val(),
-                        phone: $('#phone').val()
+                        phone: $('#phone').val(),
+                        password: $('#password').val()
                     },
                     complete: // this function is called when the request is finished
                         function (xhr, status) {
@@ -253,7 +254,7 @@
                             if (status === 'error')
                                 alert(xhr.responseText);
                             else
-                                alert('OK');
+                                alert(xhr.responseText);
                         }
                 });
             }
