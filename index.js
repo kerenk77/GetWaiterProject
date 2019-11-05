@@ -4,6 +4,15 @@ const app = express();
 const port = process.env.PORT || 80;
 const registration = require("./registration.js");
 
+app.set('view engine', 'ejs');
+app.get('/user/:id', (req, res) => {
+    console.log(req.params.id)
+    res.render('./user', {
+        id: req.params.id,
+        data: ['sara', 'index', 'xx', ]
+    });
+})
+
 app.use(express.static('public'));
 app.use(cookieParser());
 // Parse URL-encoded bodies (as sent by HTML forms)
