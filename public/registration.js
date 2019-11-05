@@ -26,8 +26,9 @@ async function register(req, res) {
 
 
 
+
     for (let u of users) {
-        if (userName === u.userName && password === u.password) {
+        if ((userName === u.userName) && (password === u.password)) {
             res.status(500);
             res.send('משתמש קיים')
         }
@@ -36,7 +37,8 @@ async function register(req, res) {
     //    userName,
     //    password
     //}
-    await db.query("INSERT INTO users (user_name, password) VALUES(" + userName + "," + password + ")");
+    await db.query("insert into users ( user_name, password) VALUES( " + userName + "," + password + ")");
+    // console.log(db.query("INSERT INTO users ( user_name, password) VALUES( " + userName + "," + password + ")"))
 
     res.send('you are in!!');
 };

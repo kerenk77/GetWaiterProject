@@ -38,9 +38,9 @@ app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
     root: __dirname
 }));
 
-app.get('/db', (req, res) => {
-    registration(req, res);
-});
+//app.get('/db', (req, res) => {
+//  registration(req, res);
+//});
 
 app.post('/registration/register', (req, res) => {
     console.log(req.body)
