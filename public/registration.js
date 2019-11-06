@@ -16,7 +16,7 @@ mysql.createPool({
 
 module.exports = {
     register,
-    login
+    // login
 };
 
 async function register(req, res) {
@@ -37,7 +37,7 @@ async function register(req, res) {
     //    userName,
     //    password
     //}
-    await db.query("insert into users ( user_name, password) VALUES( " + userName + "," + password + ")");
+    await db.query("insert into users ( user_name, password) VALUES( ' " + userName + "','" + password + "')");
     // console.log(db.query("INSERT INTO users ( user_name, password) VALUES( " + userName + "," + password + ")"))
 
     res.send('you are in!!');
@@ -49,6 +49,20 @@ async function getUsers() {
     return data;
 }
 
-function login(req, res) {
-    res.send("gfddd")
-}
+// function login(req, res) {
+//     let userName = req.body.userName;
+//     let password = req.body.password;
+//     let users = await getUsers();
+
+// for(let u of users){
+//     if ((userName === u.userName) && (password === u.password)) {
+//         res.status(300);
+//         res.send('התחברת בהצחלה')
+//     }
+
+// }
+
+
+
+//     res.send("gfddd")
+// }
