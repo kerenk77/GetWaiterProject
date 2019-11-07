@@ -12,12 +12,7 @@ app.get('/userinfo/:id', (req, res) => {
     res.render('pages/userinfo', {
         id: req.params.id
     });
-
 });
-
-
-
-
 app.set('view engine', 'ejs');
 app.get('/user/:id', (req, res) => {
     console.log(req.params.id)
@@ -34,18 +29,18 @@ app.use(express.urlencoded());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-app.get('/', (req, res) => res.sendFile('./public/pages/home.html', {
-    root: __dirname
-}));
+app.get('/', function (req, res) {
+    res.render('./pages/home', {})
+});
 app.get('/registration', (req, res) => res.sendFile('./public/pages/Registration.html', {
     root: __dirname
 }));
 app.get('/contactus', (req, res) => res.sendFile('./public/pages/ContactUs.html', {
     root: __dirname
 }));
-app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
-    root: __dirname
-}));
+// app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
+//     root: __dirname
+// }));
 
 //app.get('/db', (req, res) => {
 //  registration(req, res);

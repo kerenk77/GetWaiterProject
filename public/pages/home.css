@@ -74,8 +74,8 @@ a.link:active {
 .logo {
     float: left;
     height: 100px;
-    width: 130px;
-    padding-left: 180px;
+    width: 180px;
+    padding-left: 80px;
     padding-top: 1px;
     margin: 2px
 }
