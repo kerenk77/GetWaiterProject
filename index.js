@@ -7,20 +7,7 @@ const registration = require("./public/registration.js");
 //const dbModule = require("./dataBase.js");
 
 app.set('view engine', 'ejs');
-app.get('/userinfo/:id', (req, res) => {
 
-    res.render('pages/userinfo', {
-        id: req.params.id
-    });
-});
-app.set('view engine', 'ejs');
-app.get('/user/:id', (req, res) => {
-    console.log(req.params.id)
-    res.render('./user', {
-        id: req.params.id,
-        data: ['sara', 'index', 'xx', ]
-    });
-})
 
 app.use(express.static('public'));
 app.use(cookieParser());
@@ -32,15 +19,13 @@ app.use(express.json());
 app.get('/', function (req, res) {
     res.render('./pages/home', {})
 });
-// app.get('/registration', function (req, res) {
-// res.render('./pages/Registration',{})
-// });
-app.get('/contactus',function (req, res) {
- res.render('./pages/ContactUs',{} )
+
+app.get('/contactus', function (req, res) {
+    res.render('./pages/ContactUs', {})
 });
-app.get('/registration',function (req, res) {
-    res.render('./pages/registration',{} )
-   });
+app.get('/registration', function (req, res) {
+    res.render('./pages/registration', {})
+});
 // app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
 //     root: __dirname
 // }));
