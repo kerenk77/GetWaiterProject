@@ -32,12 +32,15 @@ app.use(express.json());
 app.get('/', function (req, res) {
     res.render('./pages/home', {})
 });
-app.get('/registration', (req, res) => res.sendFile('./public/pages/Registration.html', {
-    root: __dirname
-}));
-app.get('/contactus', (req, res) => res.sendFile('./public/pages/ContactUs.html', {
-    root: __dirname
-}));
+// app.get('/registration', function (req, res) {
+// res.render('./pages/Registration',{})
+// });
+app.get('/contactus',function (req, res) {
+ res.render('./pages/ContactUs',{} )
+});
+app.get('/registration',function (req, res) {
+    res.render('./pages/registration',{} )
+   });
 // app.get('/home', (req, res) => res.sendFile('./public/pages/home.html', {
 //     root: __dirname
 // }));

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<%- include Topbackground %>
+<html>
+        <link rel="stylesheet" type="text/css" href="/pages/get.css" />
+    <form action="FormSubmit.html" id="myForm">
+        <h1 class="textAlign colorRed">הרשמה</h1>
+
+        <table class="margin">
+
+            <td>
+                <table class="TextRight ">
+                    <tr>
+                        <td> &nbsp; </td>
+                        <td>
+                            <p class="fontSize colorRed">:כתובת אישית</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;
+
+
+                        </td>
+                        <td><label for="NameOfSettlement">:שם ישוב</label><br>
+                            <input type="text" name="NameOfSettlement" id="NameOfSettlement" required>
+
+                        </td>
+
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <label for="Number">:מספר</label><br>
+                            <input type="Number" name="Number" id="Number" style="width: 50px">
+                        </td>
+                        <td><label for="Address">:כתובת-רחוב</label><br>
+                            <input type="text" name="Address" id="Address" required>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    
+                    
+                    <tr>
+
+                        <td><input type="submit" class="myButton" value="הירשם כמעסיק"></td>
+                        <td><input type="submit" class="myButton" value="הירשם כמלצר" id="submitBtn"></td>
+
+                    </tr>
+
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+            <td>
+                <table class="TextRight ">
+
+                    <tr>
+                        <td>
+                            <p class="fontSize colorRed">:פרטים אישים</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="firstName" id="gg"> :שם פרטי</label><br>
+                            <input type="text" name="firstName" id="firstName" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="lastName"> :שם משפחה</label><br>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <label for="userName">:(כתובת מייל(שם משתמש</label><br>
+                            <input type="text" name="userName" id="userName" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone"> :טלפון נייד</label><br>
+                            <input type="text" name="phone" id="phone" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password"> :בחר סיסמא אישית</label><br>
+                            <input type="password" name="password" id="password" required minlength="6" maxlength="12">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="RepeatThePassword">:חזור על הסיסמא</label><br>
+                            <input type="password" name="RepeatThePassword" id="RepeatThePassword" required
+                                minlength="6" maxlength="12">
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+
+        </table>
+
+
+
+    </form>
+    <%- include Bottombackground %>
+    </html>

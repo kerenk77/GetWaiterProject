@@ -3,50 +3,14 @@
 
 <head>
     <title>דף הבית</title>
-    <link rel="stylesheet" type="text/css" href="/pages/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:400,800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/pages/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:400,800&display=swap" rel="stylesheet"> -->
 </head>
 
 
 <body>
-
-    <header>
-        <div class="div1">
-
-        </div>
-        <div class="div2">
-            <div class="div3">
-                <a href="/Registration">הרשמה</a>
-                |
-                <%- include login %>
-            </div>
-        </div>
-
-    </header>
-    <div class="links">
-        <a class="link" href="/home">דף הבית</a>
-        &nbsp;
-        &nbsp;
-        |
-        &nbsp;
-        &nbsp;
-        <a class="link" href="#odot">אודות</a>
-        &nbsp;
-        &nbsp;
-        |
-        &nbsp;
-        &nbsp;
-        <a class="link" href="">איך זה עובד</a>
-        &nbsp;
-        &nbsp;
-        |
-        &nbsp;
-        &nbsp;
-        <a class="link" href="/pages/ContactUs.html">צור קשר</a>
-
-    </div>
-    <img class="logo" src="/pages/LOGO.jpg">
-
+    <%- include Topbackground %>
+ 
     <img class="img" src="/pages/XPm7K5tY.jpg">
 
     <div class="about"><b class="b"><a id='odot'>אודות</a></b><br>
@@ -64,28 +28,7 @@
         GETהצטרפו עוד היום לשינוי החברתי שלנו ב </div>
 
     <img class="img2" src="/pages/cccccc.PNG">
-    <summary>
-
-        <a href="/home">
-            <p>דף הבית</p>
-        </a>
-
-        <a href="#odot">
-            <p>אודות</p>
-
-        </a>
-
-        <a href="">
-            <p>איך זה עובד </p>
-        </a>
-
-        <a href="/pages/ContactUs.html">
-            <p>צור קשר</p>
-        </a>
-
-    </summary>
-
-
+    <%- include Bottombackground %>
 </body>
 
 
